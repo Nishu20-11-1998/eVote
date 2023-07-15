@@ -13,191 +13,354 @@
     <meta name="title" content="eVote - Online Elections Systems">
     <meta http-equiv="Cache-Control" content="no-cache" />
     <link href="wp-content/css/bootstrap.min.css" rel="stylesheet">
-    <link href="wp-content/lib/css/style.css" rel="stylesheet">
+    <!-- <link href="wp-content/lib/css/style.css" rel="stylesheet"> -->
     <script src="wp-content/js/bootstrap.bundle.min.js"></script>
+    <link href="wp-content/lib/css/main.css" rel="stylesheet">
     <style>
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
+       
     </style>
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg main-header main-header-mobile  rounded">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse d-lg-flex " id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="/">
-                <img src="wp-content/images/evote-logo.png" width="170px" height="60px" class="img-fluid"
-                alt="evote-logo"></a>
-            <ul class="navbar-nav col-lg-8 justify-content-lg-center ul-nav">
-              <li class="nav-item active li-item-active">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown li-item">
-                <a class="nav-link white dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Link 1</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 1.1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 1.2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 1.3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown li-item">
-                <a class="nav-link white dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Link 2</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 2.1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2.2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2.3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item li-item ">
-                <a class="nav-link white" href="#" >Link 3</a>
-            
-              </li>
-            </ul>
-            <div class="d-lg-flex col-lg-1 justify-content-lg-end">
-              <button class="btn btn-warning">Login</button>
+<body>
+    <!-- Header Start -->
+    <header class="header sticky">
+        <div class="overlay has-fade"></div>
+    
+        <nav class="container  d-flex justify-content-between align-content-center ">
+            <a href="/" class="header__logo pt-2">
+                <img src="wp-content\images\evote-logo.png" width="120" height="45" alt="evote" />
+            </a>
+    
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+    
+            <div class="header__links hide-for-mobile  justify-content-between align-content-center">
+                <a class="px-2 active">Home</a><a class="px-2">About</a><a class="px-2">Contact</a><a class="px-2">Blog</a><a class="px-2">Careers</a>
             </div>
-          </div>
+    
+            <a href="#" class="button-round header__cta hide-for-mobile mt-2">Login</a>
+        </nav>
+    
+        <div class="header__menu has-fade">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
         </div>
-      </nav>
-      
-                    
+    
+    </header>
+    <!-- Header End -->
 
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel Start -->
+    <div id="evote-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#evote-carousel" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#evote-carousel" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#evote-carousel" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#evote-carousel" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#evote-carousel" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item" data-bs-interval="10000">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555"
-                        dy=".3em">First slide</text>
-                </svg>
-                <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-item active slide1" data-bs-interval="10000">
+                <div class="carousel-caption">
+                    <h2 class="fade-in-up">Revolutionize Democracy</h2>
+                    <p>eVote.co.com - Your Gateway to Seamless eVoting</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444"
-                        dy=".3em">Second slide</text>
-                </svg>
+            <div class="carousel-item slide2" data-bs-interval="8000">
+                <div class="carousel-caption d-md-block">
+                    <h2>Cast Your Vote Anytime, Anywhere</h2>
+                    <p>Join India's Premier Online Voting Platform - eVote.co.com</p>
+                </div>
             </div>
-            <div class="carousel-item active" data-bs-interval="2000">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
-                        dy=".3em">Third slide</text>
-                </svg>
+            <div class="carousel-item slide3" data-bs-interval="6000">
+                <div class="carousel-caption d-md-block">
+                    <h2>Empowering Citizens </h2>
+                    <p>Participate in the Future of Voting with eVote.co.com</p>
+                </div>
+            </div>
+            <div class="carousel-item slide1" data-bs-interval="4000">
+                <div class="carousel-caption d-md-block">
+                    <h2>Unlock the Power of Digital Democracy</h2>
+                    <p>eVote.co.com - India's Trusted Electronic Voting Solution</p>
+                </div>
+            </div>
+            <div class="carousel-item slide2" data-bs-interval="4000">
+                <div class="carousel-caption d-md-block">
+                    <h2>Your Voice Matters</h2>
+                    <p>Join the Online Voting Revolution at eVote.co.com</p>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        
+        <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#evote-carousel"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#evote-carousel"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- Carousel End -->
+    <!-- About Start -->
+    <section id="home-about">
+        <div class="home-about container-fluid">
+            <div class="container-fluid home-about-header">
+                <h2 >WHAT WE DO </h2>
+            </div>
+            <div class="home-about-img">
+            </div>
+            <div class="home-about-content">
+                <h3>Revolutionise Elections with Secure Online Voting</h3>
+                <h5>eVote.co.com - Your Trusted Digital Voting Solution</h5>
+                <div class="home-about-content-text">At eVote.co.in, we specialize in providing a seamless and secure online voting experience for elections of all sizes. 
+                    Our team of experts is dedicated to making the process of voting simple, efficient, and reliable. 
+                    With a focus on digital innovation, we have revolutionized the way elections are conducted, ensuring transparency and accuracy at every step.
+                </div>
+                <a href="#" class="button-round header__cta mt-2">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+    <section>
+        <div class="jumbotron jumbotron-fluid p-4" style="text-align: justify;">
+        <h2>
+            Unlocking Two Decades of Evoting Excellence: Trusted Experts in Secure Online Voting
+        </h2>
+        <div>
+            Welcome to eVote.co.in, where our experience and expertise in the realm of evoting, online voting, and electronic voting have set the benchmark for accessible and secure election modernization. With a track record spanning over two decades, we have been at the forefront of revolutionizing the way elections are conducted, leading to more inclusive and transparent decision-making processes.
 
-    <div class="container-fluid sub-footer">
+Trusted and certified by governments, institutions, agencies, and organizations in over 30 countries, eVote.co.in stands as a testament to our commitment to excellence. Our innovative solutions and cutting-edge software have been instrumental in transforming elections worldwide, ensuring that the democratic process is efficient, secure, and in compliance with global standards.
+
+As pioneers in the field, we understand the importance of data privacy and protection. That's why our platform is fully compliant with GDPR (General Data Protection Regulation) and adheres to ISO 9001 and 27001 standards. We prioritize the security of sensitive information, utilizing state-of-the-art encryption protocols and authentication mechanisms to safeguard every vote and maintain the integrity of the electoral process.
+
+At eVote.co.in, we believe that technology should be leveraged to enhance democratic participation. Our user-friendly interfaces and intuitive designs make casting votes a seamless experience for citizens, regardless of their technical expertise. By eliminating barriers such as geographical limitations and long queues, we empower individuals to exercise their democratic rights conveniently and confidently.
+
+Join the ranks of governments, institutions, and organizations worldwide that have embraced our innovative solutions. Let us help you modernize your elections, streamline decision-making, and ensure that every vote counts. With eVote.co.in, you'll unlock a world of possibilities and transform the way you approach democracy.
+
+Experience the future of evoting, online voting, and electronic voting with eVote.co.in - your trusted partner in revolutionizing elections and empowering citizens.
+
+        </div>
+        </div>
+    </section>
+    
+    <section style="min-height: 300px;background-color: #FF7F12;color: #2d314d; text-align: center;">
+        <div  class="jumbotron jumbotron-fluid p-4">
+            <div class="row">
+                <div class="col-md-6 p-4">
+                    <div class="m-4 p-4">
+                        +600
+                    </div>
+                    <div class="m-4 p-4">
+                        Electoral Events
+                    </div>
+                </div>
+                <div class="col-md-6 p-4">
+                    <div class="m-4 p-4">
+                        +1000
+                    </div>
+                    <div class="m-4 p-4">
+                        Online Votes Cast
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="jumbotron jumbotron-fluid p-4" style="text-align: justify;">
+        <h2>
+            ONLINE VOTING
+        </h2>
+        <h4>
+            Unlock the Future of eVoting: Secure, Transparent, and Convenient Online Voting Solutions
+        </h4>
+        <div>
+            Welcome to eVote.co.in, the leading provider of secure online voting services for any election or decision-making process. Our cutting-edge platform is equipped with state-of-the-art security measures to guarantee the utmost transparency and integrity throughout your voting journey.
+
+With eVote, you can trust that your elections are in safe hands. Our advanced encryption protocols, multi-factor authentication, and tamper-proof ballot storage ensure the highest level of security for each vote cast. We prioritize the confidentiality and privacy of every participant, ensuring that their voices are heard without compromise.
+
+Streamlined and user-friendly, our intuitive interface simplifies the entire election planning process. From setting up your election parameters to managing candidate profiles, eVote provides a seamless experience that saves you time and effort. Our robust features, such as real-time result tracking and comprehensive audit trails, empower administrators to monitor and validate the voting process with ease.
+
+eVote.co.in goes beyond traditional voting methods by embracing the power of technology. By eliminating the need for physical polling stations, we make casting ballots simple and accessible for all. Whether it's a national election, corporate board vote, or community decision, our platform ensures that everyone can participate regardless of their geographical location.
+
+Experience the freedom and convenience of online voting with eVote.co.in. Our scalable infrastructure effortlessly handles elections of any scale, from small local initiatives to large-scale national campaigns. Our dedicated team of experts is always available to provide support and address any queries or concerns that may arise.
+
+Join the countless organizations and institutions that have revolutionized their voting processes with eVote.co.in. Embrace the future of democracy, where secure, transparent, and convenient online voting solutions empower individuals and strengthen the foundation of our society.
+
+Choose eVote.co.in today and shape the destiny of your elections with confidence and innovation.
+
+        </div>
+        </div>
+    </section>
+    <section style="height: 150px;color: #2d314d;">
+        <div  class="jumbotron jumbotron-fluid p-4">
+            <video></video>
+        </div>
+    </section>
+    <section>
+        <div class="jumbotron jumbotron-fluid p-4" style="text-align: justify;">
+        <h2>
+            SECURITY
+        </h2>
+        <h4>
+            Ensuring Unparalleled Security: Safeguarding the Integrity of eVote's Online Voting System
+        </h4>
+        <div>
+            At eVote.co.in, we prioritize the security of our online voting system, ensuring unparalleled protection and safeguarding the integrity of every vote. Our robust security measures are designed to provide a secure and trustworthy environment for conducting elections.
+
+With state-of-the-art encryption protocols and multi-factor authentication, we ensure that every vote cast on our platform remains confidential and tamper-proof. Our advanced security infrastructure is continuously monitored and updated to stay ahead of evolving threats, guaranteeing the highest level of data protection.
+
+Transparency is at the core of our security practices. We implement comprehensive audit trails and rigorous monitoring processes to detect and prevent any unauthorized access or suspicious activities. Through regular security audits and assessments, we continuously evaluate and enhance our systems to meet the highest industry standards.
+
+Our dedicated team of security experts works tirelessly to ensure that eVote.co.in remains a fortress against any potential vulnerabilities. We follow industry best practices and adhere to strict compliance regulations to provide a secure environment for all users.
+
+Rest assured, when you choose eVote.co.in for your online voting needs, you can have full confidence in the security of your elections. Our commitment to maintaining the privacy and integrity of each vote is unwavering, and we continuously strive to set new benchmarks in online voting security.
+
+Experience the peace of mind that comes with knowing your votes are in safe hands. Join the growing number of organizations, institutions, and individuals who trust eVote.co.in for secure and reliable online voting. Together, let's ensure the security of your elections and strengthen the democratic process in a digital era.
+        </div>
+        </div>
+    </section>
+    <!-- how does it work start -->
+    <section class="features">
         <div class="container">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 ">
-                <div class="col mb-3">
-                    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <img src="wp-content/images/evote-logo.png" width="170px" height="60px" class="img-fluid"
-                            alt="evote-logo">
-                    </a>
-                    <p class="text-body-secondary white">© 2023</p>
+            <div class="container p-2">
+                <h2>HOW DOES IT WORK</h2>
+                <h4>Revolutionize Your Voting Process: Effortless, Secure, and Transparent Online Elections</h4>
+                <div class="p-2">
+                    Conducting online elections is as simple as a 3-step process. With our user-friendly platform, you can seamlessly set up,
+                    conduct, and generate results for your elections, ensuring a smooth and efficient voting experience for all.
                 </div>
 
-                <div class="col mb-3">
+            </div>
+            <div class="d-flex mb-2 row">
+                <div class="feature col-md-4">
+                    <div class="feature-image"><img src="https://evote.co.in/img/step-1.png"alt="step-1"></div>
+                    <h3 class="feature-heading">Set-up Election</h3>
+                    <p class="feature-text">Setting up your election on eVote is a breeze. In just a few simple steps, you can have your election ready to go:
 
+                        Add Election Details: Provide essential information such as the election date, time, candidate names, and photos. Customize your election to reflect your unique requirements.
+                        
+                        Add Voter List: Import your voter list with ease using our convenient spreadsheet template. Simply drag and drop the list, and our system will take care of the rest.
+                        
+                        Review & Launch: Take a moment to review all the entered details, ensuring everything is accurate. Schedule a start/end date or launch the election immediately to engage your voters without delay.
+                        </p>
                 </div>
+                <div class="feature  col-md-4">
+                    <div class="feature-image"><img src="https://evote.co.in/img/step-2.png" alt="step-2"></div>
+                    <h3 class="feature-heading">Vote</h3>
+                    <p class="feature-text">    eVote ensures a seamless voting experience for your participants. With a single click, broadcast SMS and emails are sent to notify your voters about the election. 
+                        They can conveniently record their votes through any internet-enabled device, making the process accessible and user-friendly.
+                    </p>
+                </div>
+                <div class="feature  col-md-4">
+                    <div class="feature-image"><img src="https://evote.co.in/img/step-3.png" alt="step-3"></div>
+                    <h3 class="feature-heading">Results</h3>
+                    <p class="feature-text">Once the election concludes, the approved election officer can generate the results. Our automated system securely tabulates the votes for accuracy and transparency. This additional security measure ensures the integrity of the outcome. You can choose to publish and share the results with your voters directly on your eVote website, fostering trust and participation.
 
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column ">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">About</a></li>
-                    </ul>
+                        Experience the convenience and efficiency of online elections with eVote.co.in. Our platform streamlines the voting process while prioritizing security and data integrity. With our intuitive interface and robust features, you can confidently conduct elections of any scale.
+                        
+                        Join the growing community of organizations and institutions that trust eVote.co.in for their electronic voting needs. Revolutionize your voting process with eVote and empower participants to have their voices heard in a simple, secure, and efficient manner.
+                        
+                        Make your elections count with eVote.co.in - the ultimate solution for modern, hassle-free online voting.
+                        
+                    </p>
                 </div>
-
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link white p-0 text-body-secondary">About</a></li>
-                    </ul>
-                </div>
-            </footer>
+            </div>
+        </div>
+    </section>
+    <!-- how does it work end -->
+    <!-- Footer Start  -->
+    <div class="container-fluid  p-4" style="background: #2d314d;min-height: 300px;">
+        <div class="container row white p-4">
+            <div class="col-md-4">
+                <a href="#" class="ml-4 mb-4">
+                    <img src="wp-content\images\evote-logo.png" width="175" height="75" alt="logo">
+                </a>
+                <p class="py-2 justify-content-end align-content-center">
+                    eVote is an election system that facilitates voters to record their secure and secret ballot electronically. 
+                    <br>
+                    It has a friendly user interface and enables voters to cast their votes in few simple steps. 
+                </p>
+            </div>
+            <div class="col-md-4 justify-content-end align-content-center footer_menu-box">
+                <ul class="footer_menu">
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Home</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Stories</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Features</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 justify-content-end align-items-center footer_menu-box">
+                <ul class="footer_menu">
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Home</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Stories</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Features</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a class="footer_menu-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div class="container-fluid main-footer pt-2">
+    <div class="container-fluid  pt-2 main-footer" style="background: black;">
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
-                <div class="col-md-6 d-flex align-items-center">
-                    <span class="mb-3 mb-md-0 text-body-secondary white">© 2021. eVote Technologies Pvt Ltd. All Rights
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <span class="mb-md-0 text-body-secondary white">© 2021. eVote Technologies Pvt Ltd. All Rights
                         Reserved.</span>
                 </div>
-                <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3">Go Green</li>
-                    <li class="ms-3">Privacy</li>
-                    <li class="ms-3">Terms</li>
-                    <li class="ms-3">FAQ</li>
+                <ul class="col-md-6 d-flex justify-content-end align-items-center white">
+                    <li class="ms-3"><a>Go Green</a></li>
+                    <li class="ms-3"><a>Privacy</a></li>
+                    <li class="ms-3"><a>Terms</a></li>
+                    <li class="ms-3"><a>FAQ</a></li>
                     <li class="ms-3"> | </li>
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
-                </ul>
-            </footer>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </a>
+                    </li>
+                </ul>   
+            </div>
         </div>
     </div>
-
-</body>
-
-</html>
+    <!-- Footer End  -->
+    <script src="wp-content/lib/js/main.js"></script>
+</body> 
+</html> 
